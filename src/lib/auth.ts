@@ -24,9 +24,9 @@ export const auth = betterAuth({
   },
   plugins: [bearer()],
   trustedOrigins: [
-    "http://localhost:3000",
-    process.env.BETTER_AUTH_URL || "http://localhost:3000",
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    "http://localhost:3000",  // local dev
+    "https://gleeful-stardust-6f03ef.netlify.app/",  // Netlify frontend
+    "https://packinsight-b8ah.onrender.com" // Render backend
   ],
 });
 
